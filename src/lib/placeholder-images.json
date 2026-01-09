@@ -1,0 +1,64 @@
+{
+  "placeholderImages": [
+    {
+      "id": "event-hero",
+      "description": "Hero image for event access page",
+      "imageUrl": "https://images.unsplash.com/photo-1580688027085-8220709e3d84?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxldmVudCUyMGNyb3dkfGVufDB8fHx8MTc2NzkyODgwN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "event crowd"
+    },
+    {
+      "id": "media-1",
+      "description": "Guests laughing at a table",
+      "imageUrl": "https://images.unsplash.com/photo-1654868537177-86c35bb6b226?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwZW9wbGUlMjBldmVudHxlbnwwfHx8fDE3Njc5Mjg4MDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "people event"
+    },
+    {
+      "id": "media-2",
+      "description": "A close-up of a decorative centerpiece",
+      "imageUrl": "https://images.unsplash.com/photo-1653821355226-6def361cc7ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxldmVudCUyMGRlY29yYXRpb258ZW58MHx8fHwxNzY3ODk0OTk5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "event decoration"
+    },
+    {
+      "id": "media-3",
+      "description": "The main speaker on stage",
+      "imageUrl": "https://images.unsplash.com/photo-1626125345510-4603468eedfb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzcGVha2VyJTIwc3RhZ2V8ZW58MHx8fHwxNzY3OTI4ODA3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "speaker stage"
+    },
+    {
+      "id": "media-4",
+      "description": "A band playing live music",
+      "imageUrl": "https://images.unsplash.com/photo-1565035010268-a3816f98589a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxsaXZlJTIwYmFuZHxlbnwwfHx8fDE3Njc4MzM5Mzd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "live band"
+    },
+    {
+      "id": "media-5",
+      "description": "A beautiful sunset over the event venue",
+      "imageUrl": "https://images.unsplash.com/photo-1631179234599-6b867f20eafb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxldmVudCUyMHN1bnNldHxlbnwwfHx8fDE3Njc5Mjg4MDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "event sunset"
+    },
+    {
+      "id": "media-6",
+      "description": "People dancing",
+      "imageUrl": "https://images.unsplash.com/photo-1584720223124-466ff369e7c2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwZW9wbGUlMjBkYW5jaW5nfGVufDB8fHx8MTc2NzkyODgwN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "people dancing"
+    },
+    {
+      "id": "media-7",
+      "description": "A toast with champagne glasses",
+      "imageUrl": "https://images.unsplash.com/photo-1661542863868-166e6ecc6d1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjaGVlcnMlMjBjaGFtcGFnbmV8ZW58MHx8fHwxNzY3OTI4ODA3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cheers champagne"
+    },
+    {
+      "id": "media-8",
+      "description": "A group photo of attendees",
+      "imageUrl": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxncm91cCUyMHBob3RvfGVufDB8fHx8MTc2Nzg2NTYxN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "group photo"
+    },
+    {
+      "id": "media-9",
+      "description": "Candid shot of people mingling",
+      "imageUrl": "https://images.unsplash.com/photo-1649429398909-db7ae841c386?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cGVvcGxlJTIwbWluZ2xpbmd8ZW58MHx8fHwxNzY3OTI4ODA3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "people mingling"
+    }
+  ]
+}
