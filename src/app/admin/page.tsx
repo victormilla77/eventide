@@ -1,3 +1,4 @@
+'use client';
 import {
   Table,
   TableBody,
@@ -7,7 +8,7 @@ import {
   TableRow,
 } from '@/components/ui/table';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { getAllEvents } from '@/lib/data';
+import { getEventsByOrganizer, type EventData } from '@/lib/data';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { MoreHorizontal, PlusCircle } from 'lucide-react';
@@ -19,16 +20,33 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 import Link from 'next/link';
+import { useAuth } from '@/hooks/use-auth';
+import { useEffect, useState } from 'react';
+import { useRouter } from 'next/navigation';
 
 export default function AdminPage() {
-  const events = getAllEvents();
+  const { user, loading } = useAuth();
+  const router = useRouter();
+  const [events, setEvents] = useState<EventData[]>([]);
+
+  useEffect(() => {
+    if (!loading && !user) {
+      router.push('/login');
+    } else if (user) {
+      setEvents(getEventsByOrganizer(user.uid));
+    }
+  }, [user, loading, router]);
+
+  if (loading || !user) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <Card>
       <CardHeader className="flex flex-row items-center justify-between">
         <div>
             <CardTitle>Your Events</CardTitle>
-            <CardDescription>A list of all events in your account.</CardDescription>
+            <CardDescription>A list of all events you are hosting.</CardDescription>
         </div>
         <Button asChild>
             <Link href="/admin/new">
@@ -70,7 +88,9 @@ export default function AdminPage() {
                       <DropdownMenuItem asChild>
                         <Link href={`/admin/edit/${event.id}`}>Edit</Link>
                       </DropdownMenuItem>
-                      <DropdownMenuItem>Delete</DropdownMenuItem>
+                       <DropdownMenuItem>Download All Media</DropdownMenuItem>
+                      <DropdownMenuSeparator />
+                      <DropdownMenuItem className="text-destructive">Delete</DropdownMenuItem>
                     </DropdownMenuContent>
                   </DropdownMenu>
                 </TableCell>
@@ -78,6 +98,12 @@ export default function AdminPage() {
             ))}
           </TableBody>
         </Table>
+         {events.length === 0 && (
+            <div className="text-center p-8">
+                <h3 className="text-lg font-semibold">No events yet!</h3>
+                <p className="text-muted-foreground text-sm">Get started by creating your first event.</p>
+            </div>
+        )}
       </CardContent>
     </Card>
   );

@@ -11,6 +11,7 @@ export type MediaItem = {
 
 export type EventData = {
   id: string;
+  organizerId: string;
   code: string;
   name: string;
   description: string;
@@ -29,6 +30,7 @@ const mediaData = PlaceHolderImages.filter(img => img.id.startsWith('media-')).m
 export const events: EventData[] = [
   {
     id: '1',
+    organizerId: 'SAMPLE_USER_ID', // This would be a real user ID from Firebase Auth
     code: 'EVENT24',
     name: 'Annual Tech Summit 2024',
     description: 'A gathering of the brightest minds in technology to discuss future trends and innovations.',
@@ -46,4 +48,14 @@ export const getEventById = (id: string): EventData | undefined => {
 
 export const getAllEvents = (): EventData[] => {
   return events;
+}
+
+export const getEventsByOrganizer = (organizerId: string): EventData[] => {
+    // In a real app, you would query your database.
+    // For this demo, we check against a sample ID, but return all for any authenticated user.
+    console.log("Searching for events for organizer:", organizerId);
+    if(organizerId) {
+        return events;
+    }
+    return [];
 }

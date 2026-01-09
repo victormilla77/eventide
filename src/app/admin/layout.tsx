@@ -22,16 +22,24 @@ export default function AdminLayout({
       <Sidebar>
         <SidebarHeader>
           <div className="flex items-center gap-2">
-            <h1 className="font-headline text-lg font-bold text-primary">Admin</h1>
+            <h1 className="font-headline text-lg font-bold text-primary">Event Host</h1>
           </div>
         </SidebarHeader>
         <SidebarContent>
           <SidebarMenu>
             <SidebarMenuItem>
-              <SidebarMenuButton asChild isActive={true}>
+              <SidebarMenuButton asChild>
                 <Link href="/admin">
                   <Calendar />
-                  Events
+                  My Events
+                </Link>
+              </SidebarMenuButton>
+            </SidebarMenuItem>
+             <SidebarMenuItem>
+              <SidebarMenuButton asChild>
+                <Link href="/admin/settings">
+                  <Settings />
+                  Account Settings
                 </Link>
               </SidebarMenuButton>
             </SidebarMenuItem>
@@ -50,7 +58,7 @@ export default function AdminLayout({
         <div className="p-4 md:p-6 bg-background">
           <div className="flex items-center gap-4 mb-6">
             <SidebarTrigger className="md:hidden" />
-            <h2 className="text-2xl font-bold text-foreground">Events Dashboard</h2>
+            <h2 className="text-2xl font-bold text-foreground">Host Dashboard</h2>
           </div>
           {children}
         </div>
